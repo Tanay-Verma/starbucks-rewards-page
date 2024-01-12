@@ -4,7 +4,7 @@ import Navbar from "@/components/navbar/navbar";
 
 export default function Home() {
   return (
-    <main className="absolute">
+    <main className="absolute w-full">
       <Navbar />
       <HeroImageBanner />
       <GettingStartedSection />
