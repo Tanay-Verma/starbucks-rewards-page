@@ -100,7 +100,7 @@ const Navbar = () => {
           />
         </div>
       </div>
-      <div className="bg-[rgb(31,57,51)] font-bold text-[#FEFFFE] uppercase py-3 ">
+      <div className="bg-[rgb(31,57,51)] font-bold text-[#FEFFFE] uppercase py-3 block sticky top-0 z-20">
         <div className="flex container">
           <div className="w-[10%]"></div>
           <div className="w-[90%]">Starbucks® Rewards</div>

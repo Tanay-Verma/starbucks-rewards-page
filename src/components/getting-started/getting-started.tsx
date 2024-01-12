@@ -6,7 +6,7 @@ const GettingStartedSection = () => {
       <div className="font-semibold text-3xl">Getting started is easy</div>
       <div>Earn Stars and get rewarded in a few easy steps.</div>
       <div className="flex flex-col md:flex-row mt-2 p-2 w-full justify-center items-start gap-3 lg:container">
-        <div className="flex md:flex-col justify-center items-start md:items-center gap-2 border">
+        <div className="flex md:flex-col justify-center items-start md:items-center gap-2">
           <span className="rounded-full h-12 w-12 flex items-center justify-center border-[#2D8F67] border-2 text-[#015D3F] font-bold p-4">
             1
           </span>
@@ -15,7 +15,7 @@ const GettingStartedSection = () => {
               <div>To get started, join now. You can also join in the app to get access to the full range of Starbucks® Rewards benefits.</div>
           </div>
         </div>
-        <div className="flex md:flex-col justify-center items-start md:items-center gap-2 border">
+        <div className="flex md:flex-col justify-center items-start md:items-center gap-2">
           <span className="rounded-full h-12 w-12 flex items-center justify-center border-[#2D8F67] border-2 text-[#015D3F] font-bold p-4">
             2
           </span>
@@ -24,7 +24,7 @@ const GettingStartedSection = () => {
               <div>Use cash, credit/debit card or save some time and pay right through the app. You’ll collect Stars all ways. Learn how</div>
           </div>
         </div>
-        <div className="flex md:flex-col justify-center items-start md:items-center gap-2 border">
+        <div className="flex md:flex-col justify-center items-start md:items-center gap-2">
           <span className="rounded-full h-12 w-12 flex items-center justify-center border-[#2D8F67] border-2 text-[#015D3F] font-bold p-4">
             3
           </span>
