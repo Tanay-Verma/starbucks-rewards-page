@@ -22,7 +22,7 @@ const SideMenu: React.FC<SideMenuProps> = ({ navmenu, isMenuOpen }) => {
       </ul>
       <Separator className="mt-10 mb-10" />
       <div className="flex flex-col gap-4">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-start items-center gap-3">
           <span className="">
             <Badge variant={"outline"} className="border-black text-md">
               Sign in

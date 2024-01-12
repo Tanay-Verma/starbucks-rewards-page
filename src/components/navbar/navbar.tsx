@@ -22,17 +22,26 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleMouseDown = (event: MouseEvent) => {
-        closeMenu(event);
-      };
-      if (isMenuOpen) {
-        document.addEventListener('click', handleMouseDown);
-      } else {
-        document.removeEventListener('click', handleMouseDown);
-      }
-  
-      return () => {
-        document.removeEventListener('click', handleMouseDown);
-      };
+      closeMenu(event);
+    };
+    if (isMenuOpen) {
+      document.addEventListener("click", handleMouseDown);
+      // Disable scrolling
+      document.body.style.overflow = "hidden";
+      document.documentElement.style.overflow = "hidden";
+    } else {
+      document.removeEventListener("click", handleMouseDown);
+      // Enable scrolling
+      document.body.style.overflow = "auto";
+      document.documentElement.style.overflow = "auto";
+    }
+
+    return () => {
+      document.removeEventListener("click", handleMouseDown);
+      // Enable scrolling
+      document.body.style.overflow = "auto";
+      document.documentElement.style.overflow = "auto";
+    };
   }, [isMenuOpen]);
 
   return (
@@ -64,7 +73,7 @@ const Navbar = () => {
             ))}
           </div>
           <div className="flex items-center">
-          <span className="mx-4 flex gap-2">
+            <span className="mx-4 flex gap-2">
               <MapPinIcon fill="balck" color="white" />
               <span>Find a store</span>
             </span>
@@ -99,7 +108,7 @@ const Navbar = () => {
       </div>
       <div
         ref={menuRef}
-        className={`lg:hidden fixed inset-y-24 right-0 w-full h-full transform ${
+        className={`lg:hidden z-50 fixed inset-y-24 right-0 w-full h-full transform ${
           isMenuOpen ? "bg-black/70" : "bg-transparent"
         } transition-colors duration-500 ease-in-out`}
       >
